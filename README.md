@@ -37,7 +37,7 @@ The easiest way to get started is to use the provided [Dockerfile](Dockerfile) t
 $ bash scripts/docker/build.sh
 
 # Launch an interactive container (you will need to provide the full path to the directory containing your ONNX model, /models in this example)
-$ bash script/docker/launch.sh /models
+$ bash scripts/docker/launch.sh /models
 ```
 
 You should now be inside the container with all of the dependencies installed.  You should be able to run the commands above to modify the ONNX model, build the TensorRT plugin, and then create/run the TensorRT engine for the model.
