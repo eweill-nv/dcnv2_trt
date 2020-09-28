@@ -19,4 +19,4 @@
 MODEL_PATH=$1
 MODEL_MOUNT_LOCATION='/models'
 NAME='dcnv2_trt'
-docker run --gpus all -v $MODEL_PATH:$MODEL_MOUNT_LOCATION --rm --name=$NAME --network host -t -i dcnv2_trt bash
+docker run --gpus 1 -v $MODEL_PATH:$MODEL_MOUNT_LOCATION --rm --name=$NAME --network host -t -i dcnv2_trt bash
