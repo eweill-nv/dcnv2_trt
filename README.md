@@ -53,7 +53,7 @@ The following commands should reproduce the environment that the Dockerfile crea
 $ docker pull nvcr.io/nvidia/tensorrt:20.08-py3
 
 # Launch the container
-$ docker run --gpus all \
+$ docker run --gpus 1 \
     -v <path_to_onnx_model>:/models \
     --name <name_for_docker_container> \
     --network host \
